@@ -1,0 +1,23 @@
+{
+  "name": "seanvowles",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanVowles/seanvowles.git"
+  },
+  "author": "Sean Vowles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanVowles/seanvowles/issues"
+  },
+  "homepage": "https://github.com/SeanVowles/seanvowles#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
