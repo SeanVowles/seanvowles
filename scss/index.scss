@@ -1,3 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&display=swap');
+
+$font-stack: Inconsolata, Courier New;
+
+$primary-color: #1C1C1C;
+$brand-grey: #F3F3F3;
+
+$row-gap: 50px;
+
+html, body {
+    height: 100%;
+}
+
 body {
-    background: darkgrey;
+    font: 100% $font-stack;
+    letter-spacing: 2px;
+    line-height: 150%;
+    max-width: 100%;
+    background: $brand-grey;
+    color: $primary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    gap: $row-gap;
+}
+
+.row__vertically-centered {
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column__vertically-centered {
+    justify-content: center;
+}
+
+.column__50pct {
+    width: 50%;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.item__image {
+    border: 2px solid $primary-color;
+    background: white;
+}
+
+.item__image--rounded {
+    border-radius: 50%;
 }
